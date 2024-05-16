@@ -47,7 +47,7 @@ class AplikasiCatatan {
             catatanArray[jumlahCatatan] = new Catatan(id, konten);
             jumlahCatatan++;
         } else {
-            System.out.println("Array Blog penuh, tidak bisa menambah Blog baru.");
+            System.out.println("Memory Blog penuh, tidak bisa menambah Blog baru.");
         }
     }
 
@@ -115,7 +115,7 @@ public class Main {
                 case 1:
                     System.out.print("Masukkan ID: ");
                     String id = scanner.nextLine();
-                    System.out.print("Masukkan BLog: ");
+                    System.out.print("Masukkan Blog: ");
                     String konten = scanner.nextLine();
                     aplikasi.tambahCatatan(id, konten);
                     break;
